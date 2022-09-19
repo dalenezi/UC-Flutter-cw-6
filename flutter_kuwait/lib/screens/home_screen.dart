@@ -59,8 +59,10 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Container(
                     padding: EdgeInsets.all(10),
-                    child: FloatingActionButton(
-                      backgroundColor: Colors.grey,
+                    child: ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(Colors.grey),
+                      ),
                       onPressed: () {
                         Navigator.push(
                           context,
